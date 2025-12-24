@@ -22,22 +22,22 @@ public class FitMain {
         System.out.print("Enter member ID (ถ้าไม่มีให้กด Enter): ");
         String memberId = sc.nextLine();
 
-        //สร้างสมาชิก
+        
         Membership m = new Membership(name, sid, email, phone, memberId);
 
-        //ตรวจสอบสถานะสมาชิก
+        
         if (m.isMember()) {
             System.out.println("\n=== พบข้อมูลสมาชิก ===");
             m.showMemberStatus();
 
-            //รับวันใช้งานจากผู้ใช้
+            
             System.out.print("\nEnter usage date (dd/mm/yyyy): ");
             String useDate = sc.nextLine();
 
-            //สร้างReservation(บันทึกวันใช้งาน)
+           
             Reservation r = new Reservation(m, useDate);
 
-            //เมนูจอง
+           
             System.out.println("\nเลือกบริการ");
             System.out.println("1. จองอุปกรณ์");
             System.out.println("2. จองคลาส");
