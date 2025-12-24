@@ -22,7 +22,7 @@ public class Reservation {
         f.showClass();
     }
 
-    // ระบบบันทึกการใช้งาน
+    
     public void logUsage(String type, String name) {
         System.out.println("=== บันทึกการใช้งาน ===");
         System.out.println("Member ID: " + member.getMemberId());
